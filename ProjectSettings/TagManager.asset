@@ -6,6 +6,7 @@ TagManager:
   tags:
   - nextButton
   - backButton
+  - helpButton
   layers:
   - Default
   - TransparentFX
