@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/ARkiezen.unity
+    guid: a50b98efd676b3c41b33bf37c1ea4a17
+  - enabled: 1
+    path: Assets/Scenes/ARclicking.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/ARmoving.unity
+    guid: 57f64f18961980e45ac75702b963c07a
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: af5525e8e6fddfc44991f90049501d23, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

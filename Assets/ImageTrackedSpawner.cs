@@ -6,9 +6,22 @@ using System.Collections.Generic;
 public class ImageTrackedSpawner : MonoBehaviour
 {
     public ARTrackedImageManager trackedImageManager;
-    public GameObject cubePrefab;
-
+    public string[] imageNames;
+    public GameObject[] prefabs;
+    
+    public Dictionary<string, GameObject> prefabMap = new();
     private Dictionary<string, GameObject> spawnedPrefabs = new();
+
+    void Awake()
+    {
+        for (int i = 0; i < imageNames.Length; i++)
+        {
+            if (i < prefabs.Length)
+            {
+                prefabMap[imageNames[i]] = prefabs[i];
+            }
+        }
+    }
 
     void OnEnable()
     {
@@ -46,11 +59,11 @@ public class ImageTrackedSpawner : MonoBehaviour
     {
         string name = trackedImage.referenceImage.name;
 
-        cubePrefab.transform.rotation = trackedImage.transform.rotation * Quaternion.Euler(90f, 0f, 0f);
+        if (!prefabMap.TryGetValue(name, out var prefabToSpawn)) return;
 
         if (!spawnedPrefabs.TryGetValue(name, out var prefab))
         {
-            prefab = Instantiate(cubePrefab, trackedImage.transform.position, trackedImage.transform.rotation);
+            prefab = Instantiate(prefabToSpawn, trackedImage.transform.position, trackedImage.transform.rotation);
             spawnedPrefabs[name] = prefab;
         }
         else

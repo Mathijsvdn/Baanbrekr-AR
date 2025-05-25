@@ -25,5 +25,35 @@ MonoBehaviour:
       m_GuidHigh: 1124507905467674600
     m_Size: {x: 0.1, y: 0.101406254}
     m_SpecifySize: 1
-    m_Name: TestQR2
+    m_Name: initialQR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4991519560367010798
+      m_GuidHigh: 13738217911714934429
+    m_SerializedTextureGuid:
+      m_GuidLow: 7139352201703229594
+      m_GuidHigh: 15932145603698393
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: step2QR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5666023714757146265
+      m_GuidHigh: 17852593574056626583
+    m_SerializedTextureGuid:
+      m_GuidLow: 7896163169544928435
+      m_GuidHigh: 13012678104082610377
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: step4QR
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5228791004040980029
+      m_GuidHigh: 7304984931271714955
+    m_SerializedTextureGuid:
+      m_GuidLow: 9292276540900960803
+      m_GuidHigh: 14414320931260422938
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
+    m_Name: step6QR
     m_Texture: {fileID: 0}

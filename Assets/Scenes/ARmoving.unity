@@ -936,7 +936,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trackedImageManager: {fileID: 773190230}
-  cubePrefab: {fileID: 7903555688269127173, guid: 12e2f60eccf1a204598c1fe6535819af, type: 3}
+  imageNames:
+  - initialQR
+  - step2QR
+  - step4QR
+  - step6QR
+  prefabs:
+  - {fileID: 7903555688269127173, guid: 1ee9062db425cda4ebdd3fccc594a852, type: 3}
+  - {fileID: 7903555688269127173, guid: bdf26f3af30dcf64ead166680f95eeb8, type: 3}
+  - {fileID: 7903555688269127173, guid: 478ab4c685e4f1e4ebb764d8c978cb2c, type: 3}
+  - {fileID: 7903555688269127173, guid: e1e238369066d0a4f93010e6605c65d3, type: 3}
 --- !u!4 &1964602099
 Transform:
   m_ObjectHideFlags: 0
