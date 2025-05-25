@@ -6,7 +6,7 @@ public class UIPanelHelp : MonoBehaviour
     public GameObject originPanel;
     public GameObject helpPanel;
 
-    void Start()
+    public void Start()
     {
         if (originPanel == null || helpPanel == null) return;
 
@@ -20,7 +20,7 @@ public class UIPanelHelp : MonoBehaviour
         }
     }
 
-    void SwitchToHelp()
+    public void SwitchToHelp()
     {
         originPanel.SetActive(false);
         helpPanel.SetActive(true);

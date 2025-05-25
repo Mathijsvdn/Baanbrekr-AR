@@ -8,13 +8,13 @@ public class UIPanelStep : MonoBehaviour
     public GameObject previousPanel;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void Start()
     {
         SetupButton("nextButton", targetPanel);
         SetupButton("backButton", previousPanel);
     }
 
-    void SetupButton(string tag, GameObject panelToActivate)
+    public void SetupButton(string tag, GameObject panelToActivate)
     {
         if (originPanel == null || panelToActivate == null) return;
 
@@ -28,7 +28,7 @@ public class UIPanelStep : MonoBehaviour
         }
     }
 
-    void SwitchPanel(GameObject panelToActivate)
+    public void SwitchPanel(GameObject panelToActivate)
     {
         originPanel.SetActive(false);
         panelToActivate.SetActive(true);
